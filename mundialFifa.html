@@ -1,0 +1,33 @@
+<meta charset="UTF-8">
+
+<h1>Programa Anio mundial de la fifa</h1>
+<script>
+
+    function saltoLinea(){
+
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+
+    }
+
+    function imprimir(frase) {
+        document.write(frase);
+        saltoLinea();
+
+
+    }
+
+    var anhomundia = 1930;
+    var limite = parseInt(prompt("Ingrese el anio del mundial a calcular: "))
+
+    while (anhomundia <= limite) {
+
+        imprimir("Hubo mundial de la fifa en el anio " + anhomundia);
+
+        anhomundia = anhomundia + 4;
+    }
+    imprimir("Final")
+  
+
+</script>

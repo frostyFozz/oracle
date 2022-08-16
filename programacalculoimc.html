@@ -1,0 +1,79 @@
+<meta charset="UTF-8">
+
+<h1>Programa para Calcular la Masa Corporal</h1>
+
+<script>
+function saltoLinea(){
+
+    document.write("<br>");
+    document.write("<br>");
+    document.write("<br>");
+
+}
+
+function imprimir(frase){
+    document.write(frase);
+    saltoLinea();
+
+
+}
+
+function CalcularImc(peso, altura,){
+
+    //imc = peso / (altura * altura);
+    return (imc = peso / (altura * altura));
+}
+
+imprimir("El resultado de la imc de Edwin y Dannesa es: " + (CalcularImc(134,5.10)+ CalcularImc(140,5.4)))
+imprimir("El resultado de la imc de Katherine y Elizabeth es: " + (CalcularImc(145,5.4)+ CalcularImc(117,5.4)))
+
+nombre = prompt("Ingrese su Nombre: ")
+pesoInformado = prompt(nombre + " Ingrese su Peso: ")
+alturaInformada = prompt(nombre + " Ingrese su Altura: ")
+
+imcCalculado = CalcularImc(pesoInformado, alturaInformada)
+
+imprimir(nombre + " La IMC en base a su peso y altura es: " + imcCalculado)
+
+if (imcCalculado < 18){
+    imprimir("Estas por debajo del peso recomendado para estar saludable!")
+}
+
+if (imcCalculado >= 18.5) {
+
+    if (imcCalculado < 25){
+
+        imprimir("Estas en el peso ideal!")
+    }
+}
+if (imcCalculado >= 25.5) {
+
+    if (imcCalculado < 29.9){
+        
+        imprimir("Estas llegando al sobre peso!")
+    }
+}
+if (imcCalculado >= 30){
+    imprimir("Estas por encima del peso recomendado para estar saludable!")
+}
+
+
+// Programa simple de calcular masa corporal de una persona
+
+//pesoEdwin = 134
+//alturaEdwin = 5.10
+// imcEdwin = pesoEdwin / (alturaEdwin * alturaEdwin)
+//CalcularImc(134, 5.10,"Edwin")
+//imprimir("El indice de la masa Corporal de edwin es: " + imcEdwin)
+//CalcularImc(134, 5.10,"Dannesa")
+
+//imprimir("El indice de masa corporal de: " + nombre + " es " + imc)
+
+
+//pesoDannesa = 145
+//alturaDannesa = 5.4
+// imcDannesa = pesoDannesa / (alturaDannesa * alturaDannesa)
+//imcDannesa = CalcularImc(pesoDannesa, alturaDannesa)
+//imprimir("El indice de la masa Corporal de Dannesa es: " + imcDannesa)
+
+</script>
