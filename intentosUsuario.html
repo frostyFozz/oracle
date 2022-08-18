@@ -1,0 +1,20 @@
+<meta charset="UTF-8">
+<script>
+
+    var inicioDeSesionRegistrado = "Edwin";
+    var contrasenhaRegistrada = "Mercedes";
+
+    
+    var intento = 3
+    var contador = 1
+    while (contador <= intento){
+        var inicioDeSesionIngresado = prompt("Ingrese su usuario");
+        var contrasenhaIngresada = prompt("Ingrese su contraseña");
+        if( inicioDeSesionRegistrado == inicioDeSesionIngresado && contrasenhaRegistrada == contrasenhaIngresada ) {
+            alert("Bienvenido al sistema " + inicioDeSesionIngresado);
+        } else {
+        alert("inicio de sesión inválido. Favor intente de nuevo");
+    }
+    contador ++;
+}
+</script>

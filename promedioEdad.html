@@ -1,0 +1,37 @@
+<meta charset="UTF-8">
+
+<h1>Calculadora de promedio de Edades</h1>
+<script>
+
+    function saltoLinea(){
+
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+
+    }
+
+    function imprimir(frase) {
+        document.write(frase);
+        saltoLinea();
+
+
+    }
+    var totaledades = 0;
+    var contador = 1;
+    var cantidadMiembros = parseInt(prompt("Ingrese la cantidad de miembros: "));
+
+    while (contador <= cantidadMiembros){
+
+        edad = parseInt(prompt("Ingrese la edad de su familiar: "));
+        contador ++;
+        totaledades = totaledades + edad; 
+        promEdad = totaledades / cantidadMiembros;
+    }   
+    imprimir("El total de las edades de los miembros es" + totaledades/n)
+
+    imprimir("El promedio de edad de esta familia es" + promEdad/n)
+
+    imprimir("Final")
+    
+    </script>

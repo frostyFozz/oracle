@@ -19,18 +19,39 @@
     }
 
     var numeroPensado = Math.round(Math.random()*10);
-    var numeroLanzado = parseInt(prompt("Ingresa un numero del 0-10: "))
+    
+    var contador = 1;
+    var intento = 3;
+
+    while (contador <= intento){
+
+        var numeroLanzado = parseInt(prompt("Ingresa un numero del 0-10: "));
+        if (numeroPensado == numeroLanzado){
+
+            alert("has Acertado en el intento" + contador + " Gracias por participar!: " + numeroPensado)
+            break;
+        } 
+        else  {
+    
+        alert("Fallaste estas atrapado en mi bucle! ")
+    
+        }
+        contador ++;
+    }
+    
 
     if (numeroPensado == numeroLanzado){
+        //corregir aquí
+        imprimir("usted acertó, en el intento " + contador + " el número pensado era " + numeroPensado);
+    } 
+    else {
+        imprimir("usted erró, el número pensado era " + numeroPensado);
 
-        imprimir("has Acertado Gracias por participar!: ")
 
     }
+    
+    imprimir("fin");
 
-    else  {
-    
-        imprimir("Fallaste estas atrapado en mi bucle! " + numeroPensado)
-    
-    }
+
 
 </script>
